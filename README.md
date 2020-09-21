@@ -32,6 +32,26 @@
 
 ![](Content/images/20200920071255315.png)
 
+### 1.4 ASP.NET MVC4 编译报错CS0012
+
+解决方法：https://daixiang.blog.csdn.net/article/details/108703080
+
+视图文件夹 Views 中，有 Web.config 配置文件，在 system.web - compilation - assemblies 节点添加报错提示的代码，添加后代码如下所示：
+
+```
+  <system.web>
+    <compilation>
+      <assemblies>
+        <add assembly="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <!- 添加的代码-开始 ->
+        <add assembly="System.Data.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <!- 添加的代码-结束 ->
+      </assemblies>
+    </compilation>
+  </system.web>
+
+```
+
 ## 2. 页面展示
 BookShopLite 包含3个主要页面：图书列表页面、图书购买页面和购买详情页面，分别如下所示。
 ### 2.1 书籍类型列表页面
