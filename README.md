@@ -52,6 +52,8 @@ BookShopLite 包含3个主要页面：图书列表页面、图书购买页面和
 
 电子邮箱：daixiangcn@outlook.com
 
+技术博客：https://daixiang.blog.csdn.net
+
 GitHub: [Daixiangcn](https://github.com/Daixiangcn)
 
 微信开发者主页： [软件大道](https://developers.weixin.qq.com/community/personal/oCJUswwS_u4S30Ibm2swAqvSjusw)
